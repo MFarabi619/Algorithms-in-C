@@ -20,14 +20,13 @@ int main(void) {
     }
 
     char userInput[10];
-    // scanf("%s", userInput);
     fgets(userInput, sizeof(userInput), stdin);
-printf("reached");
-    isdigit(userInput) ? printf("\n"):printf("Please enter a valid number!");
+    
+    isdigit(userInput) ? printf("\n"):printf("Please enter a valid number!\n\n");
     
     int num = (int) userInput;
     
-    printf("Your choice was %s", algorithmList);
+    printf("Your choice was %s\n\n", algorithmList);
 
     
   armstrong_numbers_tests();
