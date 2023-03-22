@@ -21,6 +21,8 @@ int main(void) {
 
     char *userInput = "";
     scanf("%s", userInput);
+
+    
     
     printf("Your choice was %s", algorithmList[userInput]);
 
