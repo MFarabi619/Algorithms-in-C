@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "Armstrong_Numbers/armstrong_numbers.h"
 
 int main(void) {
@@ -10,21 +11,35 @@ int main(void) {
     "Please enter the corresponding number of the algorithm you'd like to use into the console:\n\n";
 
     char algorithmList[][100] = {
-    "1. Armstrong Numbers\n"
-    "2. \n\n"};
+    "1. Armstrong Numbers\n",
+    "2. Hamming Distance between DNA Strands\n\n"};
+    
     int algorithmListLength = sizeof(algorithmList)/sizeof(algorithmList[0]);
 
       printf("%s", introMessage);
-    for (int i; i<algorithmListLength;i++){
+    for (int i=0; i<algorithmListLength; i++){
     printf("%s", algorithmList[i]);
     }
 
-    char *userInput = "";
-    scanf("%s", userInput);
-
+    char userInput[10];
+    bool userInputValid = false;
+    
+    while (userInputValid ==false){
+    fgets(userInput, sizeof(userInput), stdin);
+        // scanf("%s", userInput);
+        // printf("reached");
+    // userInputValid = isdigit(userInput);
+        // printf("%d", userInputValid);
+        printf("\nYour input was: %s\n", userInput);
+        printf("Valid inputs are between %d-%d!", 1, algorithmListLength);
+        if (userInputValid){break;}
+        else printf("\nPlease enter a valid number!\n\n");
+    }
     
     
-    printf("Your choice was %s", algorithmList[userInput]);
+    int num = (int) userInput;
+    
+    printf("\n\nYour choice was %s\n\n", algorithmList[(int) userInput]);
 
     
   armstrong_numbers_tests();
