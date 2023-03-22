@@ -20,7 +20,8 @@ int main(void) {
     }
 
     char userInput[10];
-    scanf("%s", userInput);
+    // scanf("%s", userInput);
+    fgets(userInput, sizeof(userInput), stdin);
 printf("reached");
     isdigit(userInput) ? printf("\n"):printf("Please enter a valid number!");
     
