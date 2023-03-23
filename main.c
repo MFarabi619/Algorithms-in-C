@@ -8,6 +8,7 @@
 int main(void) {
 
   char *introMessage = 
+    "NOTE: THIS PROJECT IS A WORK IN PROGRESS!\n\n"
     "Hello! Welcome to my personal algorithm library! :)\n\n"
     "Displayed below is a list of available algorithms you can explore.\n\n"
     "Please enter the corresponding number of the algorithm you'd like to use into the console:\n\n";
