@@ -5,6 +5,8 @@
 #include <stdbool.h>
 #include "Armstrong_Numbers/armstrong_numbers.h"
 
+bool input_filter_int(char *string, int *integer);
+
 int main(void) {
 
   char *introMessage = 
@@ -48,4 +50,8 @@ int main(void) {
     
   armstrong_numbers_tests();
   return 0;
+}
+
+bool input_filter_int(char *string, int *integer){
+
 }

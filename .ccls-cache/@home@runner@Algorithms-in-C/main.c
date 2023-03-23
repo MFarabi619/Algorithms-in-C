@@ -1,11 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
+#include <stdbool.h>
 #include "Armstrong_Numbers/armstrong_numbers.h"
+
+bool input_filter_int(char *string, int *integer);
 
 int main(void) {
 
   char *introMessage = 
+    "NOTE: THIS PROJECT IS A WORK IN PROGRESS!\n\n"
     "Hello! Welcome to my personal algorithm library! :)\n\n"
     "Displayed below is a list of available algorithms you can explore.\n\n"
     "Please enter the corresponding number of the algorithm you'd like to use into the console:\n\n";
@@ -26,9 +31,10 @@ int main(void) {
     
     while (userInputValid ==false){
     fgets(userInput, sizeof(userInput), stdin);
+        userInput[strlen(userInput)-1]=0;
         // scanf("%s", userInput);
         // printf("reached");
-    userInputValid = isdigit(userInput);
+    // userInputValid = isdigit(userInput);
         // printf("%d", userInputValid);
         printf("\nYour input was: %s\n", userInput);
         printf("Valid inputs are between %d-%d!", 1, algorithmListLength);
@@ -44,4 +50,8 @@ int main(void) {
     
   armstrong_numbers_tests();
   return 0;
+}
+
+bool input_filter_int(char *string, int *integer){
+
 }
