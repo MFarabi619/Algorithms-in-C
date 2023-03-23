@@ -15,7 +15,8 @@ A collection of algorithm solutions written in C. :)
 - Getting length of string with strlen() function.
 - Filtering input strictly for valid integers
 - Whenever a string is declared in C, the compiler automatically appends a null terminator to the end of the string, denoted by '\0'.
-- Using atoi() to convert string to int
+- Using atoi() to convert string to int.
+- Debugging C is a nightmare if you don't watch your memory management.
 
 
 ## Future improvements
