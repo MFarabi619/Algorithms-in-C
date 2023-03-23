@@ -14,6 +14,7 @@ A collection of algorithm solutions written in C. :)
 - Using the isspace() function to check if a character is whitespace.
 - Getting length of string with strlen() function.
 - Filtering input strictly for valid integers
+- Whenever a string is declared in C, the compiler automatically appends a null terminator to the end of the string, denoted by '\0'.
 
 ## Future improvements
 - Use regex for input filtering.
