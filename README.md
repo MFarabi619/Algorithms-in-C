@@ -14,3 +14,6 @@ A collection of algorithm solutions written in C. :)
 - Using the isspace() function to check if a character is whitespace.
 - Getting length of string with strlen() function.
 - Filtering input strictly for valid integers
+
+## Future improvements
+- Use regex for input filtering 
