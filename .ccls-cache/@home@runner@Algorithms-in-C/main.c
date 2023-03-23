@@ -100,6 +100,8 @@ while (isspace(string[i])) i++;
     //If i is not at the end of the string, then a non-whitespace character was found. Thus string is invalid.
 if (string[i] != '\0') return false;
 
+//Convert string to int
+*integer = atoi(integer_buffer);
     
   return true;
 }
