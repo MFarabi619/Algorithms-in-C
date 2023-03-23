@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
+#include <stdbool.h>
 #include "Armstrong_Numbers/armstrong_numbers.h"
 
 int main(void) {
@@ -26,6 +28,7 @@ int main(void) {
     
     while (userInputValid ==false){
     fgets(userInput, sizeof(userInput), stdin);
+        userInput[strlen(userInput)-1]=0;
         // scanf("%s", userInput);
         // printf("reached");
     // userInputValid = isdigit(userInput);

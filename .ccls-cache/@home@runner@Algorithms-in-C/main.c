@@ -28,7 +28,7 @@ int main(void) {
     fgets(userInput, sizeof(userInput), stdin);
         // scanf("%s", userInput);
         // printf("reached");
-    // userInputValid = isdigit(userInput);
+    userInputValid = isdigit(userInput);
         // printf("%d", userInputValid);
         printf("\nYour input was: %s\n", userInput);
         printf("Valid inputs are between %d-%d!", 1, algorithmListLength);
