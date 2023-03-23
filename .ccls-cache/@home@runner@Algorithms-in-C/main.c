@@ -91,7 +91,9 @@ bool input_filter_int(char *string, int *integer) {
     i++;
   }
 
-
+    //Append null terminator to end of buffer to make it a valid string
+integer_buffer[integer_chars] = '\0';
+    
     
   return true;
 }
