@@ -5,6 +5,8 @@
 #include <stdbool.h>
 #include "Armstrong_Numbers/armstrong_numbers.h"
 
+#define BUFFER_SIZE 4096
+
 bool input_filter_int(char *string, int *integer);
 
 int main(void) {
