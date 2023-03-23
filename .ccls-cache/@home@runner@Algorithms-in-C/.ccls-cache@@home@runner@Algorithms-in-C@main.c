@@ -72,10 +72,9 @@ int i = 0; //Track current index
         integer_chars++;
         i++;
         
-        //If the chracter after the '-' symbol is not a number, input is invalid
+        //If the chracter after the '-' symbol is not a number, input is 
     if (!isdigit(string[i])) return false;
     }
 
-    return true;
     
 }

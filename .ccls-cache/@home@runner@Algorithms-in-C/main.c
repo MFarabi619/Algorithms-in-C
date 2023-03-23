@@ -55,5 +55,27 @@ int main(void) {
 }
 
 bool input_filter_int(char *string, int *integer){
+int i = 0; //Track current index
 
+    while(isspace(string[i])) i++; //Find the first non-whitespace character
+
+    int length = strlen(string); //Get length of string
+
+    if (length == i) return false; //String is blank and thus invalid
+
+    char integer_buffer[BUFFER_SIZE];//Used to store integers found in string
+    int integer_chars = 0; //Used to keep track of integer_buffer index
+
+    //If first character is a minus symbol, add it to the integer buffer
+    if (string[i]== '-') {
+        integer_buffer[integer_chars] ='-';
+        integer_chars++;
+        i++;
+        
+        //If the chracter after the '-' symbol is not a number, input is invalid
+    if (!isdigit(string[i])) return false;
+    }
+
+    return true;
+    
 }
