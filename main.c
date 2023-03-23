@@ -93,7 +93,13 @@ bool input_filter_int(char *string, int *integer) {
 
     //Append null terminator to end of buffer to make it a valid string
 integer_buffer[integer_chars] = '\0';
-    
+
+    //Loop through trailing whitespace characters
+while (isspace(string[i])) i++;
+
+    //If i is not at the end of the string, then a non-whitespace character was found. Thus string is invalid.
+if (string[i] != '\0') return false;
+
     
   return true;
 }
