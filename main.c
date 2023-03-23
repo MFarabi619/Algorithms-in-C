@@ -14,9 +14,7 @@
 int main(void) {
 
 
-int choice = intro();
-
-switch (choice)
+switch (intro())
 {
     case 1:
         armstrong_numbers();
