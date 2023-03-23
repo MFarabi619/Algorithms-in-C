@@ -12,8 +12,25 @@
 #define BUFFER_SIZE 4096
 
 int main(void) {
+
+
+int choice = intro();
+
+switch (choice)
+{
+    case 1:
+        armstrong_numbers();
+      break;
+
+    case 2:
+      // statements
+      break;
     
-  intro();
+    default:
+      // default statements
+        break;
+}
+
     
   return 0;
 }

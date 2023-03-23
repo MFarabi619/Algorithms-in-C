@@ -47,10 +47,10 @@ char *introMessage =
     } else
     {
       printf("\nPlease enter a valid number!\n\n");
-        printf("Valid inputs are between %d-%d!", 1, algorithmListLength);
+        printf("Valid inputs are between %d-%d!\n\n", 1, algorithmListLength);
     }
   }
 
-  printf("\n\nYour choice was:\n %s\n\n", algorithmList[inputNum-1]);
-    
+  printf("Your choice was:\n %s\n\n", algorithmList[inputNum-1]);
+    return inputNum;
 }

@@ -51,6 +51,6 @@ char *introMessage =
     }
   }
 
-  printf("\n\nYour choice was:\n %s\n\n", algorithmList[inputNum-1]);
-    
+  printf("Your choice was:\n %s\n\n", algorithmList[inputNum-1]);
+    return inputNum;
 }
